@@ -1,0 +1,75 @@
+# Project: factorio
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = factorio_private.res
+OBJ      = main_factorio.o interactions.o movement.o var_vault.o load_save.o renderer.o build.o fabrics.o logistics.o power.o cords.o mines.o item_prod.o item_sell.o load_file_contents.o $(RES)
+LINKOBJ  = main_factorio.o interactions.o movement.o var_vault.o load_save.o renderer.o build.o fabrics.o logistics.o power.o cords.o mines.o item_prod.o item_sell.o load_file_contents.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -m64 -pg -g3
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = factorio.exe
+CXXFLAGS = $(CXXINCS) -m64 -std=c++11 -pg -g3
+CFLAGS   = $(INCS) -m64 -std=c++11 -pg -g3
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main_factorio.o: main_factorio.cpp
+	$(CPP) -c main_factorio.cpp -o main_factorio.o $(CXXFLAGS)
+
+interactions.o: interactions.cpp
+	$(CPP) -c interactions.cpp -o interactions.o $(CXXFLAGS)
+
+movement.o: movement.cpp
+	$(CPP) -c movement.cpp -o movement.o $(CXXFLAGS)
+
+var_vault.o: var_vault.cpp
+	$(CPP) -c var_vault.cpp -o var_vault.o $(CXXFLAGS)
+
+load_save.o: load_save.cpp
+	$(CPP) -c load_save.cpp -o load_save.o $(CXXFLAGS)
+
+renderer.o: renderer.cpp
+	$(CPP) -c renderer.cpp -o renderer.o $(CXXFLAGS)
+
+build.o: build.cpp
+	$(CPP) -c build.cpp -o build.o $(CXXFLAGS)
+
+fabrics.o: fabrics.cpp
+	$(CPP) -c fabrics.cpp -o fabrics.o $(CXXFLAGS)
+
+logistics.o: logistics.cpp
+	$(CPP) -c logistics.cpp -o logistics.o $(CXXFLAGS)
+
+power.o: power.cpp
+	$(CPP) -c power.cpp -o power.o $(CXXFLAGS)
+
+cords.o: cords.cpp
+	$(CPP) -c cords.cpp -o cords.o $(CXXFLAGS)
+
+mines.o: mines.cpp
+	$(CPP) -c mines.cpp -o mines.o $(CXXFLAGS)
+
+item_prod.o: item_prod.cpp
+	$(CPP) -c item_prod.cpp -o item_prod.o $(CXXFLAGS)
+
+item_sell.o: item_sell.cpp
+	$(CPP) -c item_sell.cpp -o item_sell.o $(CXXFLAGS)
+
+load_file_contents.o: load_file_contents.cpp
+	$(CPP) -c load_file_contents.cpp -o load_file_contents.o $(CXXFLAGS)
+
+factorio_private.res: factorio_private.rc 
+	$(WINDRES) -i factorio_private.rc --input-format=rc -o factorio_private.res -O coff 
+
