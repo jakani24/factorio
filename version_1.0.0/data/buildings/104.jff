@@ -1,0 +1,15 @@
+prod: 0
+prodspeed: 0
+power_us: 0
+cost: 3000
+name: Staudamm
+id: 104
+uses_1: 0
+uses_2: 0
+uses_2: 0
+ammount_1: 0
+ammount_2: 0
+ammount_3: 0
+ascii: 87
+storage_p: 0
+power_p: 3500

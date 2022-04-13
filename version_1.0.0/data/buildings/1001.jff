@@ -1,0 +1,15 @@
+prod: 5
+prodspeed: 1
+power_us: 250
+cost: 400
+name: Zahnradfabrik_klein
+id: 1001
+uses_1: 2
+uses_2: 3
+uses_2: 0
+ammount_1: 2
+ammount_2: 1
+ammount_3: 0
+ascii: 122
+storage_p: 0
+power_p: 0

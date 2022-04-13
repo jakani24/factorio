@@ -1,0 +1,15 @@
+prod: 3
+prodspeed: 1
+power_us: 300
+cost: 700
+name: Kupfermine_klein
+id: 10002
+uses_1: 0
+uses_2: 0
+uses_2: 0
+ammount_1: 0
+ammount_2: 0
+ammount_3: 0
+ascii: 107
+storage_p: 0
+power_p: 0

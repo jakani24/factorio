@@ -1,0 +1,15 @@
+prod: 0
+prodspeed: 0
+power_us: 100
+cost: 120
+name: Logistikzentrum_klein
+id: 500
+uses_1: 0
+uses_2: 0
+uses_2: 0
+ammount_1: 0
+ammount_2: 0
+ammount_3: 0
+ascii: 108
+storage_p: 150
+power_p: 0

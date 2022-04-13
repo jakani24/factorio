@@ -1,0 +1,15 @@
+prod: 7
+prodspeed: 5
+power_us: 500
+cost: 300
+name: Alumine_gross
+id: 10009
+uses_1: 0
+uses_2: 0
+uses_2: 0
+ammount_1: 0
+ammount_2: 0
+ammount_3: 0
+ascii: 65
+storage_p: 0
+power_p: 0

@@ -1,0 +1,15 @@
+prod: 7
+prodspeed: 1
+power_us: 200
+cost: 150
+name: Alumine_klein
+id: 10007
+uses_1: 0
+uses_2: 0
+uses_2: 0
+ammount_1: 0
+ammount_2: 0
+ammount_3: 0
+ascii: 97
+storage_p: 0
+power_p: 0
